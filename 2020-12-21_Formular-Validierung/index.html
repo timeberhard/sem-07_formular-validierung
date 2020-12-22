@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <meta http-equiv="X-UA-Compatible" content="ie=edge" />
+    <link rel="stylesheet" href="style/input-form.css" />
+    <title>Formular-Validator</title>
+  </head>
+
+  <body>
+    <div class="container">
+      <form id="form" class="form">
+        <h2>Registriere dich!</h2>
+        <!-- Aufgabe 1a: Fügen Sie Eingabefelder für Vor- und Nachname hinzu  -->
+        <div class="form-control">
+          <label for="firstname">Vorname</label>
+          <input type="text" id="firstname" placeholder="Vorname" />
+          <small>Fehlermeldung</small>
+        </div>
+        <div class="form-control">
+          <label for="lastname">Nachname</label>
+          <input type="text" id="lastname" placeholder="Nachname" />
+          <small>Fehlermeldung</small>
+        </div>
+
+        <!-- Aufgabe 1b: Fügen Sie ein Eingabefeld für eine Telefonnummer hinzu -->
+
+        <div class="form-control">
+          <label for="mobile">Mobile-Nummer</label>
+          <input type="number" id="mobile" placeholder="Mobile-Nummer" />
+          <small>Fehlermeldung</small>
+        </div>
+        <div class="form-control">
+          <label for="username">Benutzername</label>
+          <input type="text" id="username" placeholder="Benutzername" />
+          <small>Fehlermeldung</small>
+        </div>
+        <div class="form-control">
+          <label for="email">E-Mail</label>
+          <input type="text" id="email" placeholder="E-Mail" />
+          <small>Fehlermeldung</small>
+        </div>
+        <div class="form-control">
+          <label for="password">Passwort</label>
+          <input type="password" id="password" placeholder="Passwort" />
+          <small>Fehlermeldung</small>
+        </div>
+        <!-- Aufgabe 1c: Fügen Sie ein weiteres Passwortfeld (zur Bestätigung des ersten Passworts) hinzu -->
+        <div class="form-control">
+          <label for="checkPassword">Passwort bestätigen</label>
+          <input type="password" id="checkPassword" placeholder="Passwort bestätigen" />
+          <small>Fehlermeldung</small>
+        </div>
+
+        <button type="submit">Registrieren</button>
+      </form>
+    </div>
+
+    <script src="script/validate-inputs.js"></script>
+  </body>
+</html>
